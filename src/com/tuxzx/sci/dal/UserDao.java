@@ -1,4 +1,7 @@
 package com.tuxzx.sci.dal;
 
-public class UserDao {
+import com.tuxzx.sci.bean.User;
+
+public interface UserDao {
+    User findUser(String uid, String password);
 }
