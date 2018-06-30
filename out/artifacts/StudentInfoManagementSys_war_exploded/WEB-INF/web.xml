@@ -14,6 +14,16 @@
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
 
+    <!--注册模块-->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
     <!--课程查询模块-->
     <servlet>
         <servlet-name>CourseServlet</servlet-name>
@@ -48,7 +58,7 @@
     <!--Ajax选课-->
     <servlet>
         <servlet-name>addCourseServletAjax</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.addCourseServletAjax</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.AddCourseServletAjax</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>addCourseServletAjax</servlet-name>
@@ -58,7 +68,7 @@
     <!--Ajax退课-->
     <servlet>
         <servlet-name>removeCourseServletAjax</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.removeCourseServletAjax</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.RemoveCourseServletAjax</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>removeCourseServletAjax</servlet-name>
@@ -68,7 +78,7 @@
     <!--Ajax获得已选课程-->
     <servlet>
         <servlet-name>getAllSelectedCourseServletAjax</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.getAllSelectedCourseServletAjax</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.GetAllSelectedCourseServletAjax</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>getAllSelectedCourseServletAjax</servlet-name>
@@ -78,7 +88,7 @@
     <!--成绩查询模块-->
     <servlet>
         <servlet-name>gradeInfoServlet</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.gradeInfoServlet</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.GradeInfoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>gradeInfoServlet</servlet-name>

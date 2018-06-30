@@ -25,6 +25,8 @@ public class LoginServlet extends HttpServlet {
         LoginService loginService = new LoginServiceImpl();
         User user = loginService.findUser(uid, password);
         if (user == null) {
+            req.setAttribute("error","登陆失败...<br>请检查用户名和密码是否错误");
+            req.getRequestDispatcher("error.jsp").forward(req,resp);
             resp.sendRedirect("./error.jsp");
         }else {
             req.getSession().setAttribute("user", user);

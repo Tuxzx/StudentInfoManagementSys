@@ -9,9 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-public class removeCourseServletAjax extends HttpServlet {
+public class GradeInfoServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req, resp);
@@ -19,18 +18,11 @@ public class removeCourseServletAjax extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setCharacterEncoding("utf-8");
-        req.setCharacterEncoding("utf-8");
+        // 查询学生成绩
         User user = (User) req.getSession().getAttribute("user");
-        String uid = user.getUid();
-        String cid = req.getParameter("cid");
         UserService userService = new UserServiceImpl();
-        System.out.println("ajax后台响应");
-        PrintWriter out = resp.getWriter();
-        if (userService.cancelSelectCourse(uid, cid)) {
-            out.write("true");
-        } else {
-            out.write("false");
-        }
+        req.setAttribute("gradeInfo",userService.getUserGrade(user.getUid()));
+        req.getRequestDispatcher("gradeInfo.jsp").forward(req,resp);
+        resp.sendRedirect("/gradeInfo.jsp");
     }
 }

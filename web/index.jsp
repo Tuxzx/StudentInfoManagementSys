@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%-- Bootshrap --%>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <title>学生课程信息管理系统-登陆</title>

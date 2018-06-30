@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%-- Bootshrap --%>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <title>Title</title>
+    <title>Error</title>
 </head>
 <body>
 <div class="container">
@@ -21,7 +22,7 @@
                     Something wrong!
                 </h1>
                 <p>
-                  登陆失败......
+                    <%= request.getAttribute("error") %>
                 </p>
                 <p>
                     <a class="btn btn-primary btn-large" href="index.jsp">Home</a>
