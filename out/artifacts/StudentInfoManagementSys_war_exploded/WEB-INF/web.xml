@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <!--登陆模块-->
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>com.tuxzx.sci.servlet.LoginServlet</servlet-class>
@@ -11,5 +12,76 @@
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--课程查询模块-->
+    <servlet>
+        <servlet-name>CourseServlet</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.CourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CourseServlet</servlet-name>
+        <url-pattern>/CourseServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--个人信息修改模块-->
+    <servlet>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.UserInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <url-pattern>/UserInfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--个人选课模块-->
+    <servlet>
+        <servlet-name>SelectCourseServlet</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.SelectCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectCourseServlet</servlet-name>
+        <url-pattern>/SelectCourseServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!--Ajax选课-->
+    <servlet>
+        <servlet-name>addCourseServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.addCourseServletAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addCourseServletAjax</servlet-name>
+        <url-pattern>/addCourseServletAjax</url-pattern>
+    </servlet-mapping>
+
+    <!--Ajax退课-->
+    <servlet>
+        <servlet-name>removeCourseServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.removeCourseServletAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>removeCourseServletAjax</servlet-name>
+        <url-pattern>/removeCourseServletAjax</url-pattern>
+    </servlet-mapping>
+
+    <!--Ajax获得已选课程-->
+    <servlet>
+        <servlet-name>getAllSelectedCourseServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.getAllSelectedCourseServletAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getAllSelectedCourseServletAjax</servlet-name>
+        <url-pattern>/getAllSelectedCourseServletAjax</url-pattern>
+    </servlet-mapping>
+
+    <!--成绩查询模块-->
+    <servlet>
+        <servlet-name>gradeInfoServlet</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.gradeInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gradeInfoServlet</servlet-name>
+        <url-pattern>/gradeInfoServlet</url-pattern>
     </servlet-mapping>
 </web-app>

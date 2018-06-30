@@ -9,6 +9,17 @@ public class User {
     private String tel;
     private int role;
 
+    public User(){}
+
+    public User(String uid, String username, String gender, int age, String tel, int role) {
+        this.uid = uid;
+        this.username = username;
+        this.gender = gender;
+        this.age = age;
+        this.tel = tel;
+        this.role = role;
+    }
+
     public String getUid() {
         return uid;
     }
@@ -72,4 +83,5 @@ public class User {
                 tel+"\n权限："+role;
         return str;
     }
+
 }

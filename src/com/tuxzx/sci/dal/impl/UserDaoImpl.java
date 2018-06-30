@@ -6,9 +6,7 @@ import com.tuxzx.sci.dal.TableContact;
 import com.tuxzx.sci.dal.UserDao;
 import com.tuxzx.sci.util.JDBCUtils;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import javax.persistence.Table;
 import java.sql.SQLException;
 
 public class UserDaoImpl extends BaseDao implements UserDao {
@@ -47,5 +45,35 @@ public class UserDaoImpl extends BaseDao implements UserDao {
             cusClose();
         }
         return user;
+    }
+
+    @Override
+    public boolean updateUserinfo(User user) {
+        String sql = "UPDATE "+TableContact.TABLE_USER+" SET "+TableContact.USER_NAME+" = ? ," +
+                TableContact.USER_GENDER+" = ?," +
+                TableContact.USER_AGE+" = ? ," +
+                TableContact.USER_TEL+" = ? " +
+                "WHERE "+TableContact.USER_ID+" = ?";
+        connection = JDBCUtils.getConnection();
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, user.getUsername());
+            statement.setString(2, user.getGender());
+            statement.setInt(3, user.getAge());
+            statement.setString(4,user.getTel());
+            statement.setString(5, user.getUid());
+
+            int status = statement.executeUpdate();
+            System.out.println(statement);
+            System.out.println(status);
+            if (status >0) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            cusClose();
+        }
+        return false;
     }
 }

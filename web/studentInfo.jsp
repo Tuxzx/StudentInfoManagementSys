@@ -29,7 +29,7 @@
         <div class="row clearfix">
           <div class="col-md-8 column">
             <h1 class="h1">个人信息</h1>
-              <form role="form" action="InfoServlet">
+              <form role="form" action="UserInfoServlet">
                 <div class="form-group">
                   <label for="uid">学号</label><input type="text" class="form-control" id="uid" name="uid" value="<%=user.getUid()%>" disabled/>
                 </div>
@@ -76,13 +76,13 @@
                 </h3>
               </div>
               <div class="panel-body">
-                <a href="/CourseSelectServlet">个人选课</a>
+                <a href="/SelectCourseServlet">个人选课</a>
               </div>
               <div class="panel-body">
                 <a href="/CourseServlet">课程信息</a>
               </div>
               <div class="panel-body">
-                <a href="#">成绩查询</a>
+                <a href="/gradeInfoServlet">成绩查询</a>
               </div>
               <div class="panel-footer">
 
