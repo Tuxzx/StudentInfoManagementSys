@@ -16,6 +16,8 @@ public interface UserDao {
     boolean updateUserinfo(User user);
 
     // 超级用户权限
+    User getUser(String uid);
+
     List<User> getAllUser();
 
     boolean removeUser(String uid);

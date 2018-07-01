@@ -1,5 +1,7 @@
 package com.tuxzx.sci.bean;
 
+import java.util.Date;
+
 public class Course {
     private String cid;
     private String name;
@@ -7,6 +9,7 @@ public class Course {
     private int theoryLesson;
     private int practiceLesson;
     private String testMethod;
+    private Date testDate;
 
     public String getCid() {
         return cid;
@@ -54,5 +57,13 @@ public class Course {
 
     public void setTestMethod(String testMethod) {
         this.testMethod = testMethod;
+    }
+
+    public Date getTestDate() {
+        return testDate;
+    }
+
+    public void setTestDate(Date testDate) {
+        this.testDate = testDate;
     }
 }

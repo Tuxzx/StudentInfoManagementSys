@@ -1,5 +1,6 @@
 package com.tuxzx.sci.servlet;
 
+import com.tuxzx.sci.bean.User;
 import com.tuxzx.sci.service.AdminService;
 import com.tuxzx.sci.service.UserService;
 import com.tuxzx.sci.service.impl.AdminServiceImpl;
@@ -21,6 +22,7 @@ public class MgtGetAllUserInfoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         AdminService adminService = new AdminServiceImpl();
         req.setAttribute("alluserinfo",adminService.getAllUserInfo());
+        req.setAttribute("tempUserInfo", new User("null","null","null","null",0,"null",0));
         req.getRequestDispatcher("studentMgt.jsp").forward(req,resp);
         resp.sendRedirect("./studentMgt.jsp");
     }

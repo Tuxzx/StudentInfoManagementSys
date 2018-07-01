@@ -9,7 +9,7 @@ public class TableContact {
 
 
     //Table userinfo
-    public static final String USER_ID = "uid";
+    public static final String USER_ID = "uid";                     // primary key
     public static final String USER_NAME = "uname";
     public static final String USER_PASSWORD = "password";
     public static final String USER_GENDER = "gender";
@@ -18,16 +18,24 @@ public class TableContact {
     public static final String USER_ROLE = "role";
 
     //Table courseinfo
-    public static final String COURSE_ID = "cid";
+    public static final String COURSE_ID = "cid";                   // primary key
     public static final String COURSE_NAME = "cname";
     public static final String COURSE_SCORE = "cscore";
     public static final String COURSE_THEORY_LESSON = "theorylesson";
     public static final String COURSE_PRACTICE_LESSON = "practicelesson";
     public static final String COURSE_TESTMETHOD = "testmethod";
+    public static final String COURSE_TESTDATE = "testdate";
 
     //Table elective
-    public static final String ELECTIVE_USER_ID = "uid";
-    public static final String ELECTIVE_COURSE_ID = "cid";
+    /**
+     * uid reference userinfo(uid)
+     * cid reference courseinfo(cid)
+     * 级联更新删除
+     * ON DELETE CASCADE
+     * ON UPDATE CASCADE
+     */
+    public static final String ELECTIVE_USER_ID = "uid";            // primary key
+    public static final String ELECTIVE_COURSE_ID = "cid";          // primary key
     public static final String ELECTIVE_RESLUT = "result";
-    public static final String ELECTIVE_TESTDATE = "testdate";
+
 }

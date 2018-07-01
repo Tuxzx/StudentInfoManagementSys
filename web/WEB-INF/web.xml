@@ -104,4 +104,14 @@
         <servlet-name>MgtGetAllUserInfoServlet</servlet-name>
         <url-pattern>/MgtGetAllUserInfoServlet</url-pattern>
     </servlet-mapping>
+
+    <!--模态框获取用户信息-->
+    <servlet>
+        <servlet-name>GetUserInfoServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.GetUserInfoServletAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetUserInfoServletAjax</servlet-name>
+        <url-pattern>/GetUserInfoServletAjax</url-pattern>
+    </servlet-mapping>
 </web-app>

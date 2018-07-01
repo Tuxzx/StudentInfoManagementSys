@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("<thead><tr>" +
                 "<th>课程号</th><th>课程名</th><th>学分</th>" +
-                "<th>理论学分</th><th>实践学分</th><th>考核方式</th>" +
+                "<th>理论学分</th><th>实践学分</th><th>考核方式</th><th>考试时间</th>" +
                 "</tr></thead>" +
                 "<tbody>");
         for (int i=0; i<courseList.size(); i++) {
@@ -36,6 +36,7 @@ public class UserServiceImpl implements UserService {
                     "<td>"+courseList.get(i).getTheoryLesson()+"</td>" +
                     "<td>"+courseList.get(i).getPracticeLesson()+"</td>" +
                     "<td>"+courseList.get(i).getTestMethod()+"</td>"+
+                    "<td>"+courseList.get(i).getTestDate()+"</td>"+
                     "</tr>");
         }
         stringBuilder.append("</tbody>");

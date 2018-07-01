@@ -125,6 +125,34 @@ public class UserDaoImpl extends BaseDao implements UserDao {
     }
 
     @Override
+    public User getUser(String uid) {
+        String sql = "SELECT * FROM "+TableContact.TABLE_USER+" WHERE "+TableContact.USER_ID+" = ? ";
+        connection = JDBCUtils.getConnection();
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, uid);
+            debugMethod();
+            resultSet = statement.executeQuery();
+            while (resultSet.next()){
+                User user = new User();
+                user.setUid(resultSet.getString(TableContact.USER_ID));
+                user.setUsername(resultSet.getString(TableContact.USER_NAME));
+                user.setPassword(resultSet.getString(TableContact.USER_PASSWORD));
+                user.setGender(resultSet.getString(TableContact.USER_GENDER));
+                user.setAge(resultSet.getInt(TableContact.USER_AGE));
+                user.setTel(resultSet.getString(TableContact.USER_TEL));
+                user.setRole(resultSet.getInt(TableContact.USER_ROLE));
+                return user;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            cusClose();
+        }
+        return null;
+    }
+
+    @Override
     public List<User> getAllUser() {
         List<User> userList = new ArrayList<>();
         String sql = "SELECT * FROM "+TableContact.TABLE_USER;
@@ -146,6 +174,8 @@ public class UserDaoImpl extends BaseDao implements UserDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            cusClose();
         }
         return userList;
     }

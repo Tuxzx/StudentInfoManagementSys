@@ -32,6 +32,7 @@ public class CourseDaoImpl extends BaseDao implements CourseDao {
                 course.setTheoryLesson(resultSet.getInt(TableContact.COURSE_THEORY_LESSON));
                 course.setPracticeLesson(resultSet.getInt(TableContact.COURSE_PRACTICE_LESSON));
                 course.setTestMethod(resultSet.getString(TableContact.COURSE_TESTMETHOD));
+                course.setTestDate(resultSet.getDate(TableContact.COURSE_TESTDATE));
                 courseList.add(course);
             }
         } catch (SQLException e) {
@@ -61,6 +62,7 @@ public class CourseDaoImpl extends BaseDao implements CourseDao {
                 course.setTheoryLesson(resultSet.getInt(TableContact.COURSE_THEORY_LESSON));
                 course.setPracticeLesson(resultSet.getInt(TableContact.COURSE_PRACTICE_LESSON));
                 course.setTestMethod(resultSet.getString(TableContact.COURSE_TESTMETHOD));
+                course.setTestDate(resultSet.getDate(TableContact.COURSE_TESTDATE));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -144,6 +146,7 @@ public class CourseDaoImpl extends BaseDao implements CourseDao {
                 course.setTheoryLesson(resultSet.getInt(TableContact.COURSE_THEORY_LESSON));
                 course.setPracticeLesson(resultSet.getInt(TableContact.COURSE_PRACTICE_LESSON));
                 course.setTestMethod(resultSet.getString(TableContact.COURSE_TESTMETHOD));
+                course.setTestDate(resultSet.getDate(TableContact.COURSE_TESTDATE));
                 courseList.add(course);
             }
         } catch (SQLException e) {
@@ -180,7 +183,7 @@ public class CourseDaoImpl extends BaseDao implements CourseDao {
 
     @Override
     public List<Grade> getGrade(String uid) {
-        String sql = "SELECT "+TableContact.COURSE_ID+", "+TableContact.COURSE_NAME+", "+TableContact.ELECTIVE_RESLUT+", "+TableContact.ELECTIVE_TESTDATE+
+        String sql = "SELECT "+TableContact.COURSE_ID+", "+TableContact.COURSE_NAME+", "+TableContact.ELECTIVE_RESLUT+", "+TableContact.COURSE_TESTDATE+
                 " FROM "+TableContact.TABLE_COURSE+" NATURAL JOIN "+TableContact.TABLE_ELECTIVE+
                 " WHERE "+TableContact.ELECTIVE_USER_ID+" = ?";
         List<Grade> gradeList = new ArrayList<>();
@@ -198,7 +201,7 @@ public class CourseDaoImpl extends BaseDao implements CourseDao {
                 grade.setCid(resultSet.getString(TableContact.COURSE_ID));
                 grade.setCname(resultSet.getString(TableContact.COURSE_NAME));
                 grade.setResult(resultSet.getShort(TableContact.ELECTIVE_RESLUT));
-                grade.setTestDate(resultSet.getDate(TableContact.ELECTIVE_TESTDATE));
+                grade.setTestDate(resultSet.getDate(TableContact.COURSE_TESTDATE));
                 gradeList.add(grade);
             }
         } catch (SQLException e) {

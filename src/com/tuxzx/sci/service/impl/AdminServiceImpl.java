@@ -26,7 +26,7 @@ public class AdminServiceImpl implements AdminService {
                     "<td>"+userList.get(i).getAge()+"</td>" +
                     "<td>"+userList.get(i).getTel()+"</td>" +
                     "<td>"+userList.get(i).getRole()+"</td>" +
-                    "<td>"+"<input type=\"button\" class=\"btn btn-primary\"  value=\"修改\" >"+"</td>"+
+                    "<td>"+"<input type=\"button\" class=\"btn btn-primary\" onclick=\"updateUserinfo(event)\" value=\"修改\" >"+"</td>"+
                     "</tr>");
         }
         stringBuilder.append("</tbody>");

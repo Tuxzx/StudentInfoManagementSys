@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%-- Bootshrap --%>
   <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <script src="./js/cus.js"></script>
   <title>学生信息后台管理</title>
 </head>
 <body>
@@ -46,6 +47,73 @@
       </table>
     </div>
   </div>
+</div>
+
+<!-- 模态框（Modal） -->
+<% User tempUser = (User) request.getAttribute("tempUserInfo");%>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title" id="myModalLabel">
+          模态框（Modal）标题
+        </h4>
+      </div>
+      <div class="modal-body">
+        <%--form--%>
+          <form role="form" action="UserInfoServlet">
+            <div class="form-group">
+              <label for="uid">学号</label><input type="text" class="form-control" id="uid" name="uid" value="<%=tempUser.getUid()%>" disabled/>
+            </div>
+            <div class="form-group">
+              <label for="username">用户名</label><input type="text" class="form-control" id="username" name="username" value="<%=tempUser.getUsername()%>" />
+            </div>
+            <div class="form-group">
+              <label for="password">密码</label><input type="text" class="form-control" id="password" name="password" value="<%=tempUser.getPassword()%>" />
+            </div>
+            <%String selected = null;
+              if (tempUser.getGender().equals("女")) {
+                selected = "selected";
+              }%>
+            <div class="form-group">
+              <label for="gender">性别</label>
+              <select class="form-control" id="gender" name="gender">
+                <option value="男">男</option>
+                <option value="女" <%= selected%>>女</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="age">年龄</label><input type="text" class="form-control" id="age" name="age" value="<%=tempUser.getAge()%>" />
+            </div>
+            <div class="form-group">
+              <label for="tel">电话</label><input type="text" class="form-control" id="tel" name="tel" value="<%=tempUser.getTel()%>" />
+            </div>
+            <div class="form-group">
+              <label for="role">权限</label><input type="text" class="form-control" id="role" name="role" value="<%= tempUser.getRole()%>"/>
+            </div>
+            <button type="submit" class="btn btn-warning">保存</button>
+          </form>
+          <%--progress--%>
+          <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-success" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 100%;" id="progress">
+              <span class="sr-only">Saving</span>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+        </button>
+        <button type="button" class="btn btn-primary">
+          提交更改
+        </button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
 </div>
 <%-- 插入jquery和 bootstrap --%>
 <script src="./js/jquery.min.js"></script>
