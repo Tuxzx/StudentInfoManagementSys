@@ -12,7 +12,13 @@ public class BaseDao {
     protected PreparedStatement statement = null;
     protected ResultSet resultSet = null;
 
-    public void cusClose() {
+    protected void debugMethod() {
+        if (TableContact.DEBUG){
+            System.out.println(statement);
+        }
+    }
+
+    protected void cusClose() {
         if (resultSet != null) {
             try {
                 resultSet.close();

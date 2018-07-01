@@ -1,5 +1,6 @@
 package com.tuxzx.sci.servlet;
 
+import com.tuxzx.sci.bean.User;
 import com.tuxzx.sci.service.LoginService;
 import com.tuxzx.sci.service.UserService;
 import com.tuxzx.sci.service.impl.LoginServiceImpl;
@@ -26,7 +27,7 @@ public class RegisterServlet extends HttpServlet {
         String gender = req.getParameter("gender");
         String tel = req.getParameter("tel");
         LoginService loginService = new LoginServiceImpl();
-        boolean registerStatus = loginService.registeredUser(uid, username, password, gender, age, tel, 0);
+        boolean registerStatus = loginService.registeredUser(new User(uid, username, password, gender, age, tel, 0));
         if (registerStatus) {
             resp.sendRedirect("/index.jsp");
         } else {

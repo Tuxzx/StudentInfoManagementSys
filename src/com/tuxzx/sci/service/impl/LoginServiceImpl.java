@@ -15,9 +15,9 @@ public class LoginServiceImpl implements LoginService {
     }
 
     @Override
-    public boolean registeredUser(String uid, String username, String password, String gender, int age, @Nullable String tel, int role) {
+    public boolean registeredUser(User user) {
         UserDao userDao = new UserDaoImpl();
-        boolean status = userDao.registeredUser(uid, username, password, gender, age, tel, role);
+        boolean status = userDao.addUser(user);
         if (status) {
             return true;
         } else {

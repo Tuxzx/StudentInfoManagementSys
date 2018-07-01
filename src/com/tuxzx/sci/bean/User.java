@@ -11,9 +11,38 @@ public class User {
 
     public User(){}
 
+    /**
+     * 登陆sesson中携带的User对象 不包含密码
+     * @param uid
+     * @param username
+     * @param gender
+     * @param age
+     * @param tel
+     * @param role
+     */
     public User(String uid, String username, String gender, int age, String tel, int role) {
         this.uid = uid;
         this.username = username;
+        this.gender = gender;
+        this.age = age;
+        this.tel = tel;
+        this.role = role;
+    }
+
+    /**
+     * 添加新用户时使用的User 包含密码
+     * @param uid
+     * @param username
+     * @param password
+     * @param gender
+     * @param age
+     * @param tel
+     * @param role
+     */
+    public User(String uid, String username, String password, String gender, int age, String tel, int role) {
+        this.uid = uid;
+        this.username = username;
+        this.password = password;
         this.gender = gender;
         this.age = age;
         this.tel = tel;

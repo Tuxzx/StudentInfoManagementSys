@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%-- Bootshrap --%>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <title>Title</title>
+    <title>Error</title>
 </head>
 <body>
 <div class="container">

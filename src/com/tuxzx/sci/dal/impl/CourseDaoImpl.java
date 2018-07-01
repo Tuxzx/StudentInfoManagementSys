@@ -131,6 +131,7 @@ public class CourseDaoImpl extends BaseDao implements CourseDao {
         try {
             statement = connection.prepareStatement(sql);
             statement.setString(1, uid);
+            debugMethod();
             resultSet = statement.executeQuery();
             if (resultSet == null) {
                 return null;
@@ -164,6 +165,7 @@ public class CourseDaoImpl extends BaseDao implements CourseDao {
             statement = connection.prepareStatement(sql);
             statement.setString(1, uid);
             statement.setString(2, cid);
+            debugMethod();
             int status = statement.executeUpdate();
             if (status>0) {
                 return true;
@@ -186,6 +188,7 @@ public class CourseDaoImpl extends BaseDao implements CourseDao {
         try {
             statement = connection.prepareStatement(sql);
             statement.setString(1, uid);
+            debugMethod();
             resultSet = statement.executeQuery();
             if (resultSet == null) {
                 return null;

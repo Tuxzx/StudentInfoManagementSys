@@ -1,14 +1,14 @@
 package com.tuxzx.sci.dal.impl;
 
-import com.sun.istack.internal.Nullable;
 import com.tuxzx.sci.bean.User;
 import com.tuxzx.sci.dal.BaseDao;
 import com.tuxzx.sci.dal.TableContact;
 import com.tuxzx.sci.dal.UserDao;
 import com.tuxzx.sci.util.JDBCUtils;
 
-import javax.persistence.Table;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDaoImpl extends BaseDao implements UserDao {
     @Override
@@ -21,9 +21,7 @@ public class UserDaoImpl extends BaseDao implements UserDao {
             statement = connection.prepareStatement(sql);
             statement.setString(1, uid);
             statement.setString(2, password);
-            if (TableContact.DEBUG) {
-                System.out.println(statement);
-            }
+            debugMethod();
             resultSet = statement.executeQuery();
             while (resultSet.next()) {
                 user.setUid(resultSet.getString(TableContact.USER_ID
@@ -53,6 +51,7 @@ public class UserDaoImpl extends BaseDao implements UserDao {
         try {
             statement = connection.prepareStatement(sql);
             statement.setString(1, uid);
+            debugMethod();
             resultSet = statement.executeQuery();
             while (resultSet.next()) {
                 return true;
@@ -66,21 +65,22 @@ public class UserDaoImpl extends BaseDao implements UserDao {
     }
 
     @Override
-    public boolean registeredUser(String uid, String username, String password, String gender, int age, @Nullable String tel, int role) {
-        if (isUserExist(uid)) {
+    public boolean addUser(User user) {
+        if (isUserExist(user.getUid())) {
             return false;
         } else {
             String sql = "INSERT INTO "+TableContact.TABLE_USER +" VALUES ( ?, ?, ?, ?, ?, ?, ? )";
             connection = JDBCUtils.getConnection();
             try {
                 statement = connection.prepareStatement(sql);
-                statement.setString(1, uid);
-                statement.setString(2, username);
-                statement.setString(3, password);
-                statement.setString(4, gender);
-                statement.setInt(5, age);
-                statement.setString(6, tel);
-                statement.setInt(7, role);
+                statement.setString(1, user.getUid());
+                statement.setString(2, user.getUsername());
+                statement.setString(3, user.getPassword());
+                statement.setString(4, user.getGender());
+                statement.setInt(5, user.getAge());
+                statement.setString(6, user.getTel());
+                statement.setInt(7, user.getRole());
+                debugMethod();
                 int status = statement.executeUpdate();
                 if (status>0) {
                     return true;
@@ -109,11 +109,57 @@ public class UserDaoImpl extends BaseDao implements UserDao {
             statement.setInt(3, user.getAge());
             statement.setString(4,user.getTel());
             statement.setString(5, user.getUid());
-
+            debugMethod();
             int status = statement.executeUpdate();
             System.out.println(statement);
             System.out.println(status);
             if (status >0) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            cusClose();
+        }
+        return false;
+    }
+
+    @Override
+    public List<User> getAllUser() {
+        List<User> userList = new ArrayList<>();
+        String sql = "SELECT * FROM "+TableContact.TABLE_USER;
+        connection = JDBCUtils.getConnection();
+        try {
+            statement = connection.prepareStatement(sql);
+            debugMethod();
+            resultSet = statement.executeQuery();
+            while (resultSet.next()){
+                User user = new User();
+                user.setUid(resultSet.getString(TableContact.USER_ID));
+                user.setUsername(resultSet.getString(TableContact.USER_NAME));
+                user.setPassword(resultSet.getString(TableContact.USER_PASSWORD));
+                user.setGender(resultSet.getString(TableContact.USER_GENDER));
+                user.setAge(resultSet.getInt(TableContact.USER_AGE));
+                user.setTel(resultSet.getString(TableContact.USER_TEL));
+                user.setRole(resultSet.getInt(TableContact.USER_ROLE));
+                userList.add(user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return userList;
+    }
+
+    @Override
+    public boolean removeUser(String uid) {
+        String sql = "DELETE FROM "+TableContact.TABLE_USER+" WHERE "+TableContact.USER_ID+" = ? ";
+        connection = JDBCUtils.getConnection();
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, uid);
+            debugMethod();
+            int status = statement.executeUpdate();
+            if (status>0) {
                 return true;
             }
         } catch (SQLException e) {

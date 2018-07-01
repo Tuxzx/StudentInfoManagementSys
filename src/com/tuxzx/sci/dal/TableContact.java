@@ -10,7 +10,7 @@ public class TableContact {
 
     //Table userinfo
     public static final String USER_ID = "uid";
-    public static final String USER_NAME = "sname";
+    public static final String USER_NAME = "uname";
     public static final String USER_PASSWORD = "password";
     public static final String USER_GENDER = "gender";
     public static final String USER_AGE = "age";

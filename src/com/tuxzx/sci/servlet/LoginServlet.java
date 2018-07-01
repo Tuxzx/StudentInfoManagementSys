@@ -30,7 +30,11 @@ public class LoginServlet extends HttpServlet {
             resp.sendRedirect("./error.jsp");
         }else {
             req.getSession().setAttribute("user", user);
-            resp.sendRedirect("./studentInfo.jsp");
+            if (user.getRole()==0) {
+                resp.sendRedirect("./studentInfo.jsp");
+            } else {
+                resp.sendRedirect("./MgtGetAllUserInfoServlet");
+            }
         }
 
     }

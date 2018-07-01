@@ -94,4 +94,14 @@
         <servlet-name>gradeInfoServlet</servlet-name>
         <url-pattern>/gradeInfoServlet</url-pattern>
     </servlet-mapping>
+
+    <!--管理模块-->
+    <servlet>
+        <servlet-name>MgtGetAllUserInfoServlet</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.MgtGetAllUserInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MgtGetAllUserInfoServlet</servlet-name>
+        <url-pattern>/MgtGetAllUserInfoServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
