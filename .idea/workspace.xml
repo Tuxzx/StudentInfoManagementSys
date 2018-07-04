@@ -7,34 +7,98 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9c73f86-4ff3-4e82-b4bf-2ceecf3e540b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GetUserInfoServletAjax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/bean/CountInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/admin/MgtGetAllCourseInfoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/admin/MgtGetAllUserInfoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/admin/UpdateCourseServletAjax.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/admin/UpdateElectiveServletAjax.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/admin/UpdateUserInfoServletAjax.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/user/CourseServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/user/GetAllSelectedCourseServletAjax.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/courseMgt.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/electiveMgt.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/bean/CountInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllElectiveServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateCourseServletAjax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateElectiveServletAjax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateUserInfoServletAjax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/bean/CountInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/admin/MgtGetAllCourseInfoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/admin/MgtGetAllUserInfoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/admin/UpdateCourseServletAjax.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/admin/UpdateElectiveServletAjax.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/admin/UpdateUserInfoServletAjax.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/user/CourseServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/user/GetAllSelectedCourseServletAjax.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/courseMgt.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/electiveMgt.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/bean/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/bean/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/dal/TableContact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/dal/TableContact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/bean/Elective.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/bean/Elective.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/bean/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/dal/CourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/dal/CourseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/dal/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/dal/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/dal/impl/CourseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/dal/impl/CourseDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/dal/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/dal/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/service/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/service/impl/AdminServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/UserInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/UserInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/CourseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/GetUserInfoServletAjax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/MgtGetAllUserInfoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/SelectCourseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/user/SelectCourseServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/UserInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/user/UserInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/addCourseServletAjax.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/user/AddCourseServletAjax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/getAllSelectedCourseServletAjax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/gradeInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/user/GradeInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/removeCourseServletAjax.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/user/RemoveCourseServletAjax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/js/cus.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/js/cus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/studentInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/studentInfo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/studentMgt.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/studentMgt.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/bean/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/bean/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/dal/TableContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/dal/TableContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/bean/Elective.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/bean/Elective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/dal/CourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/dal/CourseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/dal/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/dal/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/CourseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/CourseDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/service/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/MgtGetAllUserInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/MgtGetAllUserInfoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/UserInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/UserInfoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/AddCourseServletAjax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/AddCourseServletAjax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/CourseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/CourseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GetAllSelectedCourseServletAjax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/GetAllSelectedCourseServletAjax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GetUserInfoServletAjax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllCourseInfoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GradeInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/GradeInfoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/MgtGetAllUserInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllUserInfoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/RemoveCourseServletAjax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/RemoveCourseServletAjax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/SelectCourseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/SelectCourseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/UserInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/UserInfoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/bean/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/bean/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/dal/TableContact.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/dal/TableContact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/bean/Elective.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/bean/Elective.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/bean/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/dal/CourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/dal/CourseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/dal/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/dal/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/dal/impl/CourseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/dal/impl/CourseDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/dal/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/dal/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/service/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/service/impl/AdminServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/UserInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/UserInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/CourseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/GetUserInfoServletAjax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/MgtGetAllUserInfoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/SelectCourseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/user/SelectCourseServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/UserInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/user/UserInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/addCourseServletAjax.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentInfoManagementSys_war_exploded/WEB-INF/classes/com/tuxzx/sci/servlet/user/AddCourseServletAjax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/getAllSelectedCourseServletAjax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/gradeInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/user/GradeInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/removeCourseServletAjax.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/tuxzx/sci/servlet/user/RemoveCourseServletAjax.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/cus.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/cus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/studentInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/studentInfo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/studentMgt.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/studentMgt.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,101 +109,112 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="electiveMgt.jsp" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/web/electiveMgt.jsp">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="368">
+                    <caret line="47" column="66" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="66" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Course.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/bean/Course.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="e#1204#1205#0" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-                <element signature="e#1281#1282#0" expanded="true" />
-                <element signature="e#1321#1322#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="studentMgt.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/studentMgt.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="26" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#2166#2173#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectCourse.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/selectCourse.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/AdminServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="60" column="19" selection-start-line="60" selection-end-line="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cus.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/cus.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-              <folding>
-                <element signature="n#!!block;n#addCourse#0" />
-                <element signature="n#!!block;n#removeCourse#0" />
-                <element signature="n#!!block;n#f#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="854">
-              <caret line="109" column="46" selection-start-line="109" selection-start-column="46" selection-end-line="109" selection-end-column="46" />
+            <state relative-caret-position="158">
+              <caret line="150" column="76" selection-start-line="150" selection-start-column="76" selection-end-line="150" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetUserInfoServletAjax.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GetUserInfoServletAjax.java">
+      <file leaf-file-name="MgtGetAllElectiveServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllElectiveServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="38" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="352">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MgtGetAllUserInfoServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllUserInfoServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateElectiveServletAjax.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateElectiveServletAjax.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateCourseServletAjax.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateCourseServletAjax.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="42" column="48" lean-forward="true" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/AdminServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="104" column="65" lean-forward="true" selection-start-line="104" selection-start-column="65" selection-end-line="104" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MgtGetAllCourseInfoServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllCourseInfoServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cus.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/cus.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="150" column="30" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="30" />
+              <folding>
+                <element signature="n#!!block;n#addCourse#0" />
+                <element signature="n#!!block;n#removeCourse#0" />
+                <element signature="n#!!block;n#updateUserinfo#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="courseMgt.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/courseMgt.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -163,21 +238,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/util/JDBCUtils.java" />
-        <option value="$PROJECT_DIR$/src/database.properties" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/util/CusStringUtils.java" />
-        <option value="$PROJECT_DIR$/web/error.xhtml" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/CourseDao.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/UserServicceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/CourseServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/removeCourseServletAjax.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/SelectCourseServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/getAllSelectedCourseServletAjax.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/addCourseServletAjax.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/bean/Elective.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/CourseDao.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/bean/Grade.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/gradeInfoServlet.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
@@ -188,25 +251,44 @@
         <option value="$PROJECT_DIR$/web/error.jsp" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/bean/User.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/LoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/service/AdminService.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/BaseDao.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/UserInfoServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/bean/Course.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/TableContact.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/CourseDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/studentInfo.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GetUserInfoServletAjax.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/MgtGetAllUserInfoServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/RemoveCourseServletAjax.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/UpdateUserInfoServletAjax.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GetAllSelectedCourseServletAjax.java" />
+        <option value="$PROJECT_DIR$/web/studentInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/bean/User.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/bean/Course.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/UpdateCourseServletAjax.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/AddCourseServletAjax.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/CourseServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/UserInfoServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllUserInfoServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateUserInfoServletAjax.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateCourseServletAjax.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/bean/CountInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/bean/Elective.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/CourseDao.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/CourseDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllCourseInfoServlet.java" />
         <option value="$PROJECT_DIR$/web/studentMgt.jsp" />
-        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/courseMgt.jsp" />
+        <option value="$PROJECT_DIR$/web/electiveMgt.jsp" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllElectiveServlet.java" />
         <option value="$PROJECT_DIR$/web/js/cus.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateElectiveServletAjax.java" />
+        <option value="$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/AdminServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -223,14 +305,20 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-123" />
-    <option name="y" value="203" />
-    <option name="width" value="2424" />
-    <option name="height" value="1325" />
+    <option name="x" value="271" />
+    <option name="y" value="133" />
+    <option name="width" value="1920" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -240,8 +328,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,6 +397,22 @@
               <item name="StudentInfoManagementSys" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sci" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentInfoManagementSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentInfoManagementSys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sci" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentInfoManagementSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentInfoManagementSys" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sci" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -332,10 +436,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="ResultSet&#9;PSI&#9;JAVA://com.mysql.jdbc.ResultSetImpl" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../StuCourseInfoMgtSys" />
@@ -348,6 +453,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tuxzx.sci.servlet.admin" />
+      <recent name="com.tuxzx.sci.servlet.user" />
       <recent name="com.tuxzx.sci.servlet" />
       <recent name="com.tuxzx.sci.util" />
       <recent name="com.tuxzx.sci.bean" />
@@ -579,81 +686,86 @@
       <workItem from="1530155350083" duration="14835000" />
       <workItem from="1530232307783" duration="21782000" />
       <workItem from="1530411873924" duration="13215000" />
-      <workItem from="1530460226246" duration="5874000" />
+      <workItem from="1530460226246" duration="5947000" />
+      <workItem from="1530466457263" duration="4764000" />
+      <workItem from="1530504819143" duration="6919000" />
+      <workItem from="1530594084088" duration="531000" />
+      <workItem from="1530599186191" duration="18384000" />
+      <workItem from="1530714119600" duration="3567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58401000" />
+    <option name="totallyTimeSpent" value="92639000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32914925" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32914925" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32983023" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.5006974" side_tool="true" weight="0.23257373" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info id="Structure" order="1" sideWeight="0.5026178" side_tool="true" weight="0.19159256" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32914925" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5913529" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32809773" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44328097" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49930266" visible="true" weight="0.23592493" />
-      <window_info id="Web" order="2" sideWeight="0.5006974" side_tool="true" weight="0.23257373" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973822" visible="true" weight="0.23524657" />
+      <window_info id="Web" order="6" sideWeight="0.5006974" side_tool="true" weight="0.23257373" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32914925" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36541143" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.582897" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="6" />
+      <window_info id="Capture Tool" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32914925" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123324394" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973822" visible="true" weight="0.19159256" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32983023" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="6" sideWeight="0.5006974" side_tool="true" weight="0.23257373" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" sideWeight="0.5026178" side_tool="true" weight="0.19159256" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,112 +776,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="69" column="37" lean-forward="true" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config_database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/util/JDBCUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/util/CusStringUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/error.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/CourseDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="15281" column="17" selection-start-line="15281" selection-start-column="13" selection-end-line="15281" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/RemoveCourseServletAjax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/bean/Elective.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/bean/Grade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/gradeInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="53" column="49" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="53" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.46-bin.jar!/com/mysql/jdbc/PreparedStatement.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -791,64 +801,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/CourseServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/CourseServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GetAllSelectedCourseServletAjax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="22" column="56" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="22" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GradeInfoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="24" column="68" lean-forward="true" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/SelectCourseServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,66 +825,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/courseInfo.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GetUserInfoServletAjax.java" />
+    <entry file="file://$PROJECT_DIR$/web/selectCourse.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/CourseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/TableContact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/CourseDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="195" column="36" lean-forward="true" selection-start-line="195" selection-start-column="36" selection-end-line="195" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isSelected#0;class#CourseDaoImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/studentInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="19">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="342">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="144" column="28" lean-forward="true" selection-start-line="144" selection-start-column="28" selection-end-line="144" selection-end-column="28" />
+        <state>
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -937,51 +859,247 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/LoginServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="200">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/UserInfoServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/bean/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="33" column="62" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
+        <state relative-caret-position="304">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/AddCourseServletAjax.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/GradeInfoServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        <state relative-caret-position="64">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/UserInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/AddCourseServletAjax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/RemoveCourseServletAjax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/GetAllSelectedCourseServletAjax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/bean/Course.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/sql/Wrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="-139">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="147" column="39" lean-forward="true" selection-start-line="147" selection-start-column="39" selection-end-line="147" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.46-bin.jar!/com/mysql/jdbc/ResultSetInternalMethods.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.46-bin.jar!/com/mysql/jdbc/ResultSetImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/courseInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/bean/CountInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/TableContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/CourseServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/user/SelectCourseServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/studentInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/bean/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/CourseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/dal/impl/CourseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="274" column="18" selection-start-line="274" selection-start-column="18" selection-end-line="274" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/bean/Elective.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/studentMgt.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllUserInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllCourseInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="150" column="76" selection-start-line="150" selection-start-column="76" selection-end-line="150" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/MgtGetAllElectiveServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -990,89 +1108,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="358">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/GetUserInfoServletAjax.java">
+    <entry file="file://$PROJECT_DIR$/web/courseMgt.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="62">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/studentMgt.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateUserInfoServletAjax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#2166#2173#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-32">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/web/electiveMgt.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="109" column="46" selection-start-line="109" selection-start-column="46" selection-end-line="109" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/MgtGetAllUserInfoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/selectCourse.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="60" column="19" selection-start-line="60" selection-end-line="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="368">
+          <caret line="47" column="66" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/cus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        <state relative-caret-position="312">
+          <caret line="150" column="30" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="30" />
           <folding>
             <element signature="n#!!block;n#addCourse#0" />
             <element signature="n#!!block;n#removeCourse#0" />
-            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#updateUserinfo#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateCourseServletAjax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="42" column="48" lean-forward="true" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/servlet/admin/UpdateElectiveServletAjax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tuxzx/sci/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="104" column="65" lean-forward="true" selection-start-line="104" selection-start-column="65" selection-end-line="104" selection-end-column="65" />
         </state>
       </provider>
     </entry>

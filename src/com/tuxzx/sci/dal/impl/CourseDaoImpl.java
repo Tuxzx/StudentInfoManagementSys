@@ -8,11 +8,12 @@ import com.tuxzx.sci.dal.CourseDao;
 import com.tuxzx.sci.dal.TableContact;
 import com.tuxzx.sci.util.JDBCUtils;
 
+import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CourseDaoImpl extends BaseDao implements CourseDao {
+public class  CourseDaoImpl extends BaseDao implements CourseDao {
     @Override
     public List<Course> getAllCourse() {
         String sql = "SELECT * FROM "+TableContact.TABLE_COURSE;
@@ -206,7 +207,100 @@ public class CourseDaoImpl extends BaseDao implements CourseDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            cusClose();
         }
         return gradeList;
+    }
+
+    @Override
+    public boolean updateCourseInfo(Course course) {
+        String sql = "UPDATE "+TableContact.TABLE_COURSE+" SET "+
+                TableContact.COURSE_NAME+" = ? , "+
+                TableContact.COURSE_SCORE+" = ? , "+
+                TableContact.COURSE_THEORY_LESSON+" = ? , "+
+                TableContact.COURSE_PRACTICE_LESSON+" = ? , "+
+                TableContact.COURSE_TESTMETHOD+" = ? , "+
+                TableContact.COURSE_TESTDATE+" = ? "+
+                " WHERE "+ TableContact.COURSE_ID+" = ?";
+        connection = JDBCUtils.getConnection();
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, course.getName());
+            statement.setInt(2, course.getScore());
+            statement.setInt(3, course.getTheoryLesson());
+            statement.setInt(4, course.getPracticeLesson());
+            statement.setString(5, course.getTestMethod());
+            statement.setDate(6, course.getTestDate());
+            statement.setString(7, course.getCid());
+            debugMethod();
+            int status = statement.executeUpdate();
+            if (status>0) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            cusClose();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean updateElectiveInfo(Elective elective) {
+        String sql = "UPDATE "+TableContact.TABLE_ELECTIVE+" SET "+TableContact.ELECTIVE_RESLUT+" =? " +
+                "WHERE "+TableContact.ELECTIVE_USER_ID+" =? AND "+TableContact.ELECTIVE_COURSE_ID+" =? ";
+        connection = JDBCUtils.getConnection();
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1, elective.getResult());
+            statement.setString(2, elective.getUid());
+            statement.setString(3, elective.getCid());
+            int status = statement.executeUpdate();
+            if (status>0) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
+    public List<Elective> getAllElective() {
+        String sql = "SELECT "+TableContact.TABLE_ELECTIVE+"."+TableContact.ELECTIVE_USER_ID+
+                ", "+TableContact.TABLE_USER+"."+TableContact.USER_NAME+
+                ", "+TableContact.TABLE_ELECTIVE+"."+TableContact.ELECTIVE_COURSE_ID+
+                ", "+TableContact.TABLE_COURSE+"."+TableContact.COURSE_NAME+
+                ", "+TableContact.TABLE_ELECTIVE+"."+TableContact.ELECTIVE_RESLUT+
+                " FROM "+TableContact.TABLE_ELECTIVE+", "+
+                TableContact.TABLE_USER+", "+
+                TableContact.TABLE_COURSE+
+                " WHERE "+TableContact.TABLE_ELECTIVE+"."+TableContact.ELECTIVE_USER_ID+" = "+TableContact.TABLE_USER+"."+TableContact.USER_ID+
+                " AND "+TableContact.TABLE_ELECTIVE+"."+TableContact.ELECTIVE_COURSE_ID+" = "+TableContact.TABLE_COURSE+"."+TableContact.COURSE_ID;
+        List<Elective> electiveList = new ArrayList<>();
+        connection = JDBCUtils.getConnection();
+        try {
+            statement = connection.prepareStatement(sql);
+            debugMethod();
+            resultSet = statement.executeQuery();
+            if (resultSet == null) {
+                return null;
+            }
+            while (resultSet.next()) {
+                Elective elective = new Elective();
+                elective.setUid(resultSet.getString(TableContact.ELECTIVE_USER_ID));
+                elective.setUname(resultSet.getString(TableContact.USER_NAME));
+                elective.setCid(resultSet.getString(TableContact.ELECTIVE_COURSE_ID));
+                elective.setCname(resultSet.getString(TableContact.COURSE_NAME));
+                elective.setResult(resultSet.getInt(TableContact.ELECTIVE_RESLUT));
+                electiveList.add(elective);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            cusClose();
+        }
+        return electiveList;
     }
 }

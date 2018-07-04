@@ -6,13 +6,38 @@ public class Elective {
     private String uid;
     private String cid;
     private int result;
-    private Date testDate;
 
-    public Elective(String uid, String cid, int result, Date testDate) {
+    private String uname;
+    private String cname;
+
+    public Elective(){}
+
+    /**
+     * 对应数据库中表 elective 的bean
+     * @param uid
+     * @param cid
+     * @param result
+     */
+    public Elective(String uid, String cid, int result) {
         this.uid = uid;
         this.cid = cid;
         this.result = result;
-        this.testDate = testDate;
+    }
+
+    /**
+     * 面向表单数据的节点bean
+     * @param uid
+     * @param cid
+     * @param result
+     * @param uname
+     * @param cname
+     */
+    public Elective(String uid, String cid, int result, String uname, String cname) {
+        this.uid = uid;
+        this.cid = cid;
+        this.result = result;
+        this.uname = uname;
+        this.cname = cname;
     }
 
     public String getUid() {
@@ -39,11 +64,19 @@ public class Elective {
         this.result = result;
     }
 
-    public Date getTestDate() {
-        return testDate;
+    public String getUname() {
+        return uname;
     }
 
-    public void setTestDate(Date testDate) {
-        this.testDate = testDate;
+    public void setUname(String uname) {
+        this.uname = uname;
+    }
+
+    public String getCname() {
+        return cname;
+    }
+
+    public void setCname(String cname) {
+        this.cname = cname;
     }
 }

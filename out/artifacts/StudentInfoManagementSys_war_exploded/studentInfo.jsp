@@ -31,7 +31,7 @@
             <h1 class="h1">个人信息</h1>
               <form role="form" action="UserInfoServlet">
                 <div class="form-group">
-                  <label for="uid">学号</label><input type="text" class="form-control" id="uid" name="uid" value="<%=user.getUid()%>" disabled/>
+                  <label for="uid">学号</label><input type="text" class="form-control" id="uid" name="uid" value="<%=user.getUid()%>" readonly/>
                 </div>
                 <div class="form-group">
                   <label for="username">用户名</label><input type="text" class="form-control" id="username" name="username" value="<%=user.getUsername()%>" />
@@ -63,7 +63,7 @@
                         role = "教师";
                     }
                   %>
-                  <label for="role">权限</label><input type="text" class="form-control" id="role" name="role" value="<%= role%>" disabled/>
+                  <label for="role">权限</label><input type="text" class="form-control" id="role" name="role" value="<%= role%>" readonly/>
                 </div>
                 <button type="submit" class="btn btn-warning">保存</button>
               </form>

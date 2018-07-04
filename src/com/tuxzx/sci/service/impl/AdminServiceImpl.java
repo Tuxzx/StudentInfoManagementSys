@@ -1,7 +1,11 @@
 package com.tuxzx.sci.service.impl;
 
+import com.tuxzx.sci.bean.Course;
+import com.tuxzx.sci.bean.Elective;
 import com.tuxzx.sci.bean.User;
+import com.tuxzx.sci.dal.CourseDao;
 import com.tuxzx.sci.dal.UserDao;
+import com.tuxzx.sci.dal.impl.CourseDaoImpl;
 import com.tuxzx.sci.dal.impl.UserDaoImpl;
 import com.tuxzx.sci.service.AdminService;
 
@@ -35,21 +39,86 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public boolean addUser(User user) {
-        return false;
+        UserDao userDao = new UserDaoImpl();
+        return userDao.addUser(user);
     }
 
     @Override
-    public boolean removeUser(User user) {
+    public boolean removeUser(String uid) {
+        UserDao userDao = new UserDaoImpl();
+        userDao.removeUser(uid);
         return false;
     }
 
     @Override
     public boolean updateUser(User user) {
-        return false;
+        UserDao userDao = new UserDaoImpl();
+        return userDao.updateUserinfoSuper(user);
     }
 
     @Override
     public boolean isUserExist(String uid) {
-        return false;
+        UserDao userDao = new UserDaoImpl();
+        return userDao.isUserExist(uid);
+    }
+
+    @Override
+    public String getAllCourseInfo() {
+        CourseDao courseDao = new CourseDaoImpl();
+        List<Course> courseList = courseDao.getAllCourse();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("<thead><tr>" +
+                "<th>课程号</th><th>课程名</th><th>学分</th><th>理论学时</th><th>实践学时</th><th>考核方式</th><th>考核时间</th>" +
+                "</tr></thead>" +
+                "<tbody>");
+        for (int i=0; i<courseList.size(); i++) {
+            stringBuilder.append("<tr>" +
+                    "<td>"+courseList.get(i).getCid()+"</td>" +
+                    "<td>"+courseList.get(i).getName()+"</td>" +
+                    "<td>"+courseList.get(i).getScore()+"</td>" +
+                    "<td>"+courseList.get(i).getTheoryLesson()+"</td>" +
+                    "<td>"+courseList.get(i).getPracticeLesson()+"</td>" +
+                    "<td>"+courseList.get(i).getTestMethod()+"</td>" +
+                    "<td>"+courseList.get(i).getTestDate()+"</td>" +
+                    "<td>"+"<input type=\"button\" class=\"btn btn-primary\" onclick=\"updateCourseinfo(event)\" value=\"修改\" >"+"</td>"+
+                    "</tr>");
+        }
+        stringBuilder.append("</tbody>");
+        return stringBuilder.toString();
+    }
+
+    @Override
+    public boolean updateCourse(Course course) {
+        CourseDao courseDao = new CourseDaoImpl();
+        return courseDao.updateCourseInfo(course);
+    }
+
+    @Override
+    public boolean updateElective(Elective elective) {
+        CourseDao courseDao = new CourseDaoImpl();
+        return courseDao.updateElectiveInfo(elective);
+    }
+
+    @Override
+    public String getAllElective() {
+        CourseDao courseDao = new CourseDaoImpl();
+        List<Elective> electiveList = courseDao.getAllElective();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("<thead><tr>" +
+                "<th>学号</th><th>姓名</th><th>课程号</th><th>课程名</th><th>成绩</th>" +
+                "</tr></thead>" +
+                "<tbody>");
+        for (int i=0; i<electiveList.size(); i++) {
+            stringBuilder.append("<tr>" +
+                    "<td>"+electiveList.get(i).getUid()+"</td>" +
+                    "<td>"+electiveList.get(i).getUname()+"</td>" +
+                    "<td>"+electiveList.get(i).getCid()+"</td>" +
+                    "<td>"+electiveList.get(i).getCname()+"</td>" +
+                    "<td>"+electiveList.get(i).getResult()+"</td>" +
+                    "<td>"+"<input type=\"button\" class=\"btn btn-primary\" onclick=\"updateElectiveinfo(event)\" value=\"修改\" >"+"</td>"+
+                    "</tr>");
+        }
+        stringBuilder.append("</tbody>");
+        return stringBuilder.toString();
     }
 }

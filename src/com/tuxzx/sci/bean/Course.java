@@ -1,6 +1,7 @@
 package com.tuxzx.sci.bean;
 
-import java.util.Date;
+
+import java.sql.Date;
 
 public class Course {
     private String cid;
@@ -10,6 +11,19 @@ public class Course {
     private int practiceLesson;
     private String testMethod;
     private Date testDate;
+
+    public Course() {
+    }
+
+    public Course(String cid, String name, int score, int theoryLesson, int practiceLesson, String testMethod, Date testDate) {
+        this.cid = cid;
+        this.name = name;
+        this.score = score;
+        this.theoryLesson = theoryLesson;
+        this.practiceLesson = practiceLesson;
+        this.testMethod = testMethod;
+        this.testDate = testDate;
+    }
 
     public String getCid() {
         return cid;
@@ -65,5 +79,17 @@ public class Course {
 
     public void setTestDate(Date testDate) {
         this.testDate = testDate;
+    }
+
+    @Override
+    public String toString() {
+        String str = "课程号："+cid+
+                "\n课程名："+name+
+                "\n学分："+score+
+                "\n理论学时："+theoryLesson+
+                "\n实践学时："+practiceLesson+
+                "\n考核方式："+testMethod+
+                "\n考核时间："+testDate;
+        return str;
     }
 }

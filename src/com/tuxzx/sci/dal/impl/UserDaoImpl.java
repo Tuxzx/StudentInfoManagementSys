@@ -181,6 +181,36 @@ public class UserDaoImpl extends BaseDao implements UserDao {
     }
 
     @Override
+    public boolean updateUserinfoSuper(User user) {
+        String sql = "UPDATE "+TableContact.TABLE_USER+" SET "+TableContact.USER_NAME+" = ? ," +
+                TableContact.USER_PASSWORD+" = ?," +
+                TableContact.USER_GENDER+" = ?," +
+                TableContact.USER_AGE+" = ? ," +
+                TableContact.USER_TEL+" = ? " +
+                "WHERE "+TableContact.USER_ID+" = ?";
+        connection = JDBCUtils.getConnection();
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, user.getUsername());
+            statement.setString(2, user.getPassword());
+            statement.setString(3, user.getGender());
+            statement.setInt(4, user.getAge());
+            statement.setString(5,user.getTel());
+            statement.setString(6, user.getUid());
+            debugMethod();
+            int status = statement.executeUpdate();
+            if (status >0) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            cusClose();
+        }
+        return false;
+    }
+
+    @Override
     public boolean removeUser(String uid) {
         String sql = "DELETE FROM "+TableContact.TABLE_USER+" WHERE "+TableContact.USER_ID+" = ? ";
         connection = JDBCUtils.getConnection();

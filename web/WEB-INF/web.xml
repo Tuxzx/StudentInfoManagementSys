@@ -27,7 +27,7 @@
     <!--课程查询模块-->
     <servlet>
         <servlet-name>CourseServlet</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.CourseServlet</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.user.CourseServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CourseServlet</servlet-name>
@@ -37,7 +37,7 @@
     <!--个人信息修改模块-->
     <servlet>
         <servlet-name>UserInfoServlet</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.UserInfoServlet</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.user.UserInfoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UserInfoServlet</servlet-name>
@@ -47,7 +47,7 @@
     <!--个人选课模块-->
     <servlet>
         <servlet-name>SelectCourseServlet</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.SelectCourseServlet</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.user.SelectCourseServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>SelectCourseServlet</servlet-name>
@@ -58,7 +58,7 @@
     <!--Ajax选课-->
     <servlet>
         <servlet-name>addCourseServletAjax</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.AddCourseServletAjax</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.user.AddCourseServletAjax</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>addCourseServletAjax</servlet-name>
@@ -68,7 +68,7 @@
     <!--Ajax退课-->
     <servlet>
         <servlet-name>removeCourseServletAjax</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.RemoveCourseServletAjax</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.user.RemoveCourseServletAjax</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>removeCourseServletAjax</servlet-name>
@@ -78,7 +78,7 @@
     <!--Ajax获得已选课程-->
     <servlet>
         <servlet-name>getAllSelectedCourseServletAjax</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.GetAllSelectedCourseServletAjax</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.user.GetAllSelectedCourseServletAjax</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>getAllSelectedCourseServletAjax</servlet-name>
@@ -88,30 +88,71 @@
     <!--成绩查询模块-->
     <servlet>
         <servlet-name>gradeInfoServlet</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.GradeInfoServlet</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.user.GradeInfoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>gradeInfoServlet</servlet-name>
         <url-pattern>/gradeInfoServlet</url-pattern>
     </servlet-mapping>
 
-    <!--管理模块-->
+    <!--管理模块 管理学生信息-->
     <servlet>
         <servlet-name>MgtGetAllUserInfoServlet</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.MgtGetAllUserInfoServlet</servlet-class>
+        <servlet-class>com.tuxzx.sci.servlet.admin.MgtGetAllUserInfoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MgtGetAllUserInfoServlet</servlet-name>
         <url-pattern>/MgtGetAllUserInfoServlet</url-pattern>
     </servlet-mapping>
 
-    <!--模态框获取用户信息-->
+    <!--模态框提交用户信息更新刷新-->
     <servlet>
-        <servlet-name>GetUserInfoServletAjax</servlet-name>
-        <servlet-class>com.tuxzx.sci.servlet.GetUserInfoServletAjax</servlet-class>
+        <servlet-name>UpdateUserInfoServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.admin.UpdateUserInfoServletAjax</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>GetUserInfoServletAjax</servlet-name>
-        <url-pattern>/GetUserInfoServletAjax</url-pattern>
+        <servlet-name>UpdateUserInfoServletAjax</servlet-name>
+        <url-pattern>/UpdateUserInfoServletAjax</url-pattern>
     </servlet-mapping>
+
+    <!--模态框提交课程信息更新刷新-->
+    <servlet>
+        <servlet-name>UpdateCourseServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.admin.UpdateCourseServletAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCourseServletAjax</servlet-name>
+        <url-pattern>/UpdateCourseServletAjax</url-pattern>
+    </servlet-mapping>
+
+
+    <!--管理模块 管理课程信息-->
+    <servlet>
+        <servlet-name>MgtGetAllCourseInfoServlet</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.admin.MgtGetAllCourseInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MgtGetAllCourseInfoServlet</servlet-name>
+        <url-pattern>/MgtGetAllCourseInfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--管理模块 管理课程信息-->
+    <servlet>
+        <servlet-name>MgtGetAllElectiveServlet</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.admin.MgtGetAllElectiveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MgtGetAllElectiveServlet</servlet-name>
+        <url-pattern>/MgtGetAllElectiveServlet</url-pattern>
+    </servlet-mapping>
+    <!--管理模块 管理课程信息-->
+    <servlet>
+        <servlet-name>UpdateElectiveServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.admin.UpdateElectiveServletAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateElectiveServletAjax</servlet-name>
+        <url-pattern>/UpdateElectiveServletAjax</url-pattern>
+    </servlet-mapping>
+
 </web-app>

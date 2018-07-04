@@ -40,21 +40,119 @@ function removeCourse(event) {
     });
 }
 
+
+// 用户信息修改
 function updateUserinfo(event) {
     console.log("updateUserInfo");
     var btn = event.target;
     // 获得表格中的课程号
     var td = btn.parentNode;
     var tr = td.parentNode;
-    var uid = tr.childNodes[0].innerHTML;
+
+    var strUid = tr.childNodes[0].innerHTML;
+    var strPassword = tr.childNodes[1].innerHTML;
+    var strUsername = tr.childNodes[2].innerHTML;
+    var strGender = tr.childNodes[3].innerHTML;
+    var strAge = tr.childNodes[4].innerHTML;
+    var strTel = tr.childNodes[5].innerHTML;
+    var strRole = tr.childNodes[6].innerHTML;
+
+    document.getElementById("uid").value = strUid;
+    document.getElementById("username").value = strUsername;
+    document.getElementById("password").value = strPassword;
+    document.getElementById("gender").value = strGender;
+    document.getElementById("age").value = strAge;
+    document.getElementById("tel").value = strTel;
+    document.getElementById("role").value = strRole;
+    $("#myModal").modal("show");
+}
+
+function updateUserInfoAjax() {
     $.ajax({
         type:"post",
-        url:"/GetUserInfoServletAjax",
-        data:{"uid":uid},
+        url:"/UpdateUserInfoServletAjax",
+        data:$("#modalForm").serialize(),
         datatype:"json",
         success:function (data) {
-            console.log("updateUserInfo: success");
+            document.getElementById("usertable").innerHTML = data;
             $("#myModal").modal("show");
+            document.getElementById("progress").style = "width: 100%;";
+            alert("信息修改成功");
+        }
+    });
+}
+
+// 课程信息修改
+function updateCourseinfo(event) {
+    console.log("updateCourseinfo");
+    var btn = event.target;
+    // 获得表格中的课程号
+    var td = btn.parentNode;
+    var tr = td.parentNode;
+
+    var strCid = tr.childNodes[0].innerHTML;
+    var strCname = tr.childNodes[1].innerHTML;
+    var strCscore = tr.childNodes[2].innerHTML;
+    var strTheoryLesson = tr.childNodes[3].innerHTML;
+    var strPracticeLesson = tr.childNodes[4].innerHTML;
+    var strTestMethod = tr.childNodes[5].innerHTML;
+    var strTestDate = tr.childNodes[6].innerHTML;
+
+    document.getElementById("cid").value = strCid;
+    document.getElementById("cname").value = strCname;
+    document.getElementById("cscore").value = strCscore;
+    document.getElementById("theorylesson").value = strTheoryLesson;
+    document.getElementById("practicelesson").value = strPracticeLesson;
+    document.getElementById("testmethod").value = strTestMethod;
+    document.getElementById("testdate").value = strTestDate;
+    $("#myModal").modal("show");
+}
+
+function updateCourseInfoAjax() {
+    $.ajax({
+        type:"post",
+        url:"/UpdateCourseServletAjax",
+        data:$("#modalForm").serialize(),
+        datatype:"json",
+        success:function (data) {
+            document.getElementById("usertable").innerHTML = data;
+            $("#myModal").modal("show");
+            document.getElementById("progress").style = "width: 100%;";
+            alert("信息修改成功");
+        }
+    });
+}
+
+function updateElectiveinfo(event) {
+    console.log("updateElectiveinfo");
+    var btn = event.target;
+    // 获得表格中的课程号
+    var td = btn.parentNode;
+    var tr = td.parentNode;
+
+    var strUid = tr.childNodes[0].innerHTML;
+    var strUname = tr.childNodes[1].innerHTML;
+    var strCid = tr.childNodes[2].innerHTML;
+    var strCname = tr.childNodes[3].innerHTML;
+
+    document.getElementById("uid").value = strUid;
+    document.getElementById("uname").value = strUname;
+    document.getElementById("cid").value = strCid;
+    document.getElementById("cname").value = strCname;
+    $("#myModal").modal("show");
+}
+
+function updateElectiveInfoAjax(){
+    $.ajax({
+        type:"post",
+        url:"/UpdateElectiveServletAjax",
+        data:$("#modalForm").serialize(),
+        datatype:"json",
+        success:function (data) {
+            document.getElementById("usertable").innerHTML = data;
+            $("#myModal").modal("show");
+            document.getElementById("progress").style = "width: 100%;";
+            alert("信息修改成功");
         }
     });
 }

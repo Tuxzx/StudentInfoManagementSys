@@ -107,9 +107,13 @@ public class User {
 
     @Override
     public String toString() {
-        String str = "学号："+uid+"\n用户名："+username+"\n密码："+
-                password+"\n性别："+gender+"\n年龄："+tel+"\n电话："+
-                tel+"\n权限："+role;
+        String str = "学号："+uid+
+                "\n用户名："+ username+
+                "\n密码："+ password+
+                "\n性别："+ gender+
+                "\n年龄："+ age+
+                "\n电话："+ tel+
+                "\n权限："+role;
         return str;
     }
 

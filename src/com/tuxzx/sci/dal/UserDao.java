@@ -20,6 +20,8 @@ public interface UserDao {
 
     List<User> getAllUser();
 
+    boolean updateUserinfoSuper(User user);
+
     boolean removeUser(String uid);
 
 }

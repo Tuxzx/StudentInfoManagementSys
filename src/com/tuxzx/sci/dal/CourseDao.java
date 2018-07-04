@@ -27,4 +27,13 @@ public interface CourseDao {
 
     // 获取所有成绩
     List<Grade> getGrade(String uid);
+
+    // 更新课程信息
+    boolean updateCourseInfo(Course course);
+
+    // 更新选课信息
+    boolean updateElectiveInfo(Elective elective);
+
+    // 获得所有选课信息
+    List<Elective> getAllElective();
 }
