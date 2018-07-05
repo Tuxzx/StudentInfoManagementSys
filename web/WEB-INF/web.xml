@@ -155,4 +155,43 @@
         <url-pattern>/UpdateElectiveServletAjax</url-pattern>
     </servlet-mapping>
 
+    <!--管理模块 增加用户模态框-->
+    <servlet>
+        <servlet-name>MgtAddUserServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.admin.MgtAddUserServletAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MgtAddUserServletAjax</servlet-name>
+        <url-pattern>/MgtAddUserServletAjax</url-pattern>
+    </servlet-mapping>
+
+    <!--管理模块 删除用户模态框-->
+    <servlet>
+        <servlet-name>MgtRemoveUserServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.admin.MgtRemoveUserServletAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MgtRemoveUserServletAjax</servlet-name>
+        <url-pattern>/MgtRemoveUserServletAjax</url-pattern>
+    </servlet-mapping>
+
+    <!--管理模块 增加课程模态框-->
+    <servlet>
+        <servlet-name>MgtAddCourseServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.admin.MgtAddCourseServletAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MgtAddCourseServletAjax</servlet-name>
+        <url-pattern>/MgtAddCourseServletAjax</url-pattern>
+    </servlet-mapping>
+
+    <!--管理模块 删除课程模态框-->
+    <servlet>
+        <servlet-name>MgtRemoveCourseServletAjax</servlet-name>
+        <servlet-class>com.tuxzx.sci.servlet.admin.MgtRemoveCourseServletAjax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MgtRemoveCourseServletAjax</servlet-name>
+        <url-pattern>/MgtRemoveCourseServletAjax</url-pattern>
+    </servlet-mapping>
 </web-app>

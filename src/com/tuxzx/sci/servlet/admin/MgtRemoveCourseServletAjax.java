@@ -1,6 +1,5 @@
 package com.tuxzx.sci.servlet.admin;
 
-import com.tuxzx.sci.bean.User;
 import com.tuxzx.sci.service.AdminService;
 import com.tuxzx.sci.service.impl.AdminServiceImpl;
 
@@ -9,8 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
-public class MgtGetAllCourseInfoServlet extends HttpServlet {
+public class MgtRemoveCourseServletAjax extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req, resp);
@@ -18,8 +18,17 @@ public class MgtGetAllCourseInfoServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("utf-8");
+        req.setCharacterEncoding("utf-8");
+        String cid = req.getParameter("cid");
         AdminService adminService = new AdminServiceImpl();
-        req.setAttribute("allcourse",adminService.getAllCourseInfo());
-        req.getRequestDispatcher("courseMgt.jsp").forward(req,resp);
+        System.out.println("ajax后台响应");
+        PrintWriter out = resp.getWriter();
+        if (adminService.removeCourse(cid)) {
+            out.write(adminService.getAllCourseInfo());
+            System.out.println(adminService.getAllCourseInfo());
+        } else {
+            out.write("服务器异常！！！");
+        }
     }
 }

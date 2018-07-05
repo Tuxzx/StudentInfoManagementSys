@@ -303,4 +303,48 @@ public class  CourseDaoImpl extends BaseDao implements CourseDao {
         }
         return electiveList;
     }
+
+    @Override
+    public boolean addCourse(Course course) {
+        String sql = "INSERT INTO "+TableContact.TABLE_COURSE+" VALUES (?,?,?,?,?,?,?)";
+        connection = JDBCUtils.getConnection();
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, course.getCid());
+            statement.setString(2, course.getName());
+            statement.setInt(3, course.getScore());
+            statement.setInt(4, course.getTheoryLesson());
+            statement.setInt(5, course.getPracticeLesson());
+            statement.setString(6, course.getTestMethod());
+            statement.setDate(7, course.getTestDate());
+            int status = statement.executeUpdate();
+            if (status>0) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            cusClose();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean removeCourse(String cid) {
+        String sql = "DELETE FROM "+TableContact.TABLE_COURSE+" WHERE "+TableContact.COURSE_ID+" =? ";
+        connection = JDBCUtils.getConnection();
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, cid);
+            int status = statement.executeUpdate();
+            if (status>0) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            cusClose();
+        }
+        return false;
+    }
 }

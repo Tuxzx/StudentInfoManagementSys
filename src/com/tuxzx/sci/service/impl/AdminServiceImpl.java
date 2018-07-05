@@ -31,6 +31,7 @@ public class AdminServiceImpl implements AdminService {
                     "<td>"+userList.get(i).getTel()+"</td>" +
                     "<td>"+userList.get(i).getRole()+"</td>" +
                     "<td>"+"<input type=\"button\" class=\"btn btn-primary\" onclick=\"updateUserinfo(event)\" value=\"修改\" >"+"</td>"+
+                    "<td>"+"<input type=\"button\" class=\"btn btn-danger\" onclick=\"deleteUserAjax(event)\" value=\"删除\" >"+"</td>"+
                     "</tr>");
         }
         stringBuilder.append("</tbody>");
@@ -46,8 +47,7 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public boolean removeUser(String uid) {
         UserDao userDao = new UserDaoImpl();
-        userDao.removeUser(uid);
-        return false;
+        return userDao.removeUser(uid);
     }
 
     @Override
@@ -81,6 +81,7 @@ public class AdminServiceImpl implements AdminService {
                     "<td>"+courseList.get(i).getTestMethod()+"</td>" +
                     "<td>"+courseList.get(i).getTestDate()+"</td>" +
                     "<td>"+"<input type=\"button\" class=\"btn btn-primary\" onclick=\"updateCourseinfo(event)\" value=\"修改\" >"+"</td>"+
+                    "<td>"+"<input type=\"button\" class=\"btn btn-danger\" onclick=\"deleteCourseAjax(event)\" value=\"删除\" >"+"</td>"+
                     "</tr>");
         }
         stringBuilder.append("</tbody>");
@@ -120,5 +121,17 @@ public class AdminServiceImpl implements AdminService {
         }
         stringBuilder.append("</tbody>");
         return stringBuilder.toString();
+    }
+
+    @Override
+    public boolean addCourse(Course course) {
+        CourseDao courseDao = new CourseDaoImpl();
+        return courseDao.addCourse(course);
+    }
+
+    @Override
+    public boolean removeCourse(String cid) {
+        CourseDao courseDao = new CourseDaoImpl();
+        return courseDao.removeCourse(cid);
     }
 }

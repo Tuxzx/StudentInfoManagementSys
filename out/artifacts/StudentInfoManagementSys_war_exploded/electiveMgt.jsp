@@ -26,6 +26,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
+              <a href="./adminMgt.jsp">个人信息</a>
+            </li>
+            <li>
               <a href="./MgtGetAllUserInfoServlet">学生信息管理</a>
             </li>
             <li>

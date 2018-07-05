@@ -26,6 +26,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
+              <a href="./adminMgt.jsp">个人信息</a>
+            </li>
+            <li>
               <a href="./MgtGetAllUserInfoServlet">学生信息管理</a>
             </li>
             <li class="active">
@@ -45,6 +48,9 @@
           </ul>
         </div>
       </nav>
+      <input type="button" class="btn btn-danger" value="添加课程" onclick="new function() {
+        $('#addModal').modal('show');
+      }">
       <table class="table table-striped table-hover" id="usertable">
         <%= request.getAttribute("allcourse")%>
       </table>
@@ -102,6 +108,63 @@
         <button type="button" class="btn btn-default" data-dismiss="modal">关闭
         </button>
         <button type="button" class="btn btn-primary" onclick="updateCourseInfoAjax()">
+          提交更改
+        </button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title" id="addmyModalLabel">
+          添加课程信息
+        </h4>
+      </div>
+      <div class="modal-body">
+        <%--form--%>
+        <form role="form" id="addmodalForm">
+          <div class="form-group">
+            <label for="addcid">课程号</label><input type="text" class="form-control" id="addcid" name="cid" />
+          </div>
+          <div class="form-group">
+            <label for="addcname">课程名</label><input type="text" class="form-control" id="addcname" name="cname" />
+          </div>
+          <div class="form-group">
+            <label for="addcscore">学分</label><input type="text" class="form-control" id="addcscore" name="cscore" />
+          </div>
+          <div class="form-group">
+            <label for="addtheorylesson">理论课时</label><input type="text" class="form-control" id="addtheorylesson" name="theorylesson" />
+          </div>
+          <div class="form-group">
+            <label for="addpracticelesson">实践课时</label><input type="text" class="form-control" id="addpracticelesson" name="practicelesson" />
+          </div>
+          <div class="form-group">
+            <label for="addtestmethod">考试方式</label><input type="text" class="form-control" id="addtestmethod" name="testmethod"/>
+          </div>
+          <div class="form-group">
+            <label for="addtestdate">考试时间</label><input type="text" class="form-control" id="addtestdate" name="testdate"/>
+          </div>
+        </form>
+        <%--progress--%>
+        <div class="progress progress-striped active">
+          <div class="progress-bar progress-bar-success" role="progressbar"
+               aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+               style="width: 0%;" id="addprogress">
+            <span class="sr-only">Saving</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+        </button>
+        <button type="button" class="btn btn-primary" onclick="addCourseInfoAjax()">
           提交更改
         </button>
       </div>

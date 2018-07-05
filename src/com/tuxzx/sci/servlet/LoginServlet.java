@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
             if (user.getRole()==0) {                                   // 判断用户权限 确定学生管理员并重定向到不同的页面
                 resp.sendRedirect("./studentInfo.jsp");
             } else {
-                resp.sendRedirect("./MgtGetAllUserInfoServlet");
+                resp.sendRedirect("./adminMgt.jsp");
             }
         }
 

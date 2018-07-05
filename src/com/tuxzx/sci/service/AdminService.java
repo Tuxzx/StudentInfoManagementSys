@@ -26,4 +26,9 @@ public interface AdminService {
     boolean updateElective(Elective elective);
 
     String getAllElective();
+
+    boolean addCourse(Course course);
+
+    boolean removeCourse(String cid);
+
 }

@@ -36,4 +36,10 @@ public interface CourseDao {
 
     // 获得所有选课信息
     List<Elective> getAllElective();
+
+    // 添加课程信息
+    boolean addCourse(Course course);
+
+    // 删除课程信息
+    boolean removeCourse(String cid);
 }

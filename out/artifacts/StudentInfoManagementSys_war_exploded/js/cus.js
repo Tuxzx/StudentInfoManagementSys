@@ -116,7 +116,6 @@ function updateCourseInfoAjax() {
         datatype:"json",
         success:function (data) {
             document.getElementById("usertable").innerHTML = data;
-            $("#myModal").modal("show");
             document.getElementById("progress").style = "width: 100%;";
             alert("信息修改成功");
         }
@@ -150,9 +149,100 @@ function updateElectiveInfoAjax(){
         datatype:"json",
         success:function (data) {
             document.getElementById("usertable").innerHTML = data;
-            $("#myModal").modal("show");
             document.getElementById("progress").style = "width: 100%;";
             alert("信息修改成功");
         }
     });
+}
+
+function addNewUserAjax() {
+    $.ajax({
+        type:"post",
+        url:"/MgtAddUserServletAjax",
+        data:$("#addmodalForm").serialize(),
+        datatype:"json",
+        success:function (data) {
+            document.getElementById("usertable").innerHTML = data;
+            document.getElementById("addprogress").style = "width: 100%;";
+            alert("信息修改成功");
+        }
+    });
+}
+
+function addNewCourseAjax() {
+    $.ajax({
+        type:"post",
+        url:"/MgtAddUserServletAjax",
+        data:$("#addmodalForm").serialize(),
+        datatype:"json",
+        success:function (data) {
+            document.getElementById("usertable").innerHTML = data;
+            document.getElementById("addprogress").style = "width: 100%;";
+            alert("信息修改成功");
+        }
+    });
+}
+
+function deleteUserAjax(event) {
+    var btn = event.target;
+    // 获得表格中的课程号
+    var td = btn.parentNode;
+    var tr = td.parentNode;
+
+    var strUid = tr.childNodes[0].innerHTML;
+    var strUname = tr.childNodes[1].innerHTML;
+    var myconfirm = confirm("您确认要删除该学生？"+
+        "\n学号"+strUid +
+        "\n姓名"+strUname);
+    if (myconfirm) {
+        $.ajax({
+            type:"post",
+            url:"/MgtRemoveUserServletAjax",
+            data:{"uid":strUid},
+            datatype:"json",
+            success:function (data) {
+                document.getElementById("usertable").innerHTML = data;
+                alert("用户"+strUid+"删除成功");
+            }
+        });
+    }
+}
+
+function addCourseInfoAjax() {
+    $.ajax({
+        type:"post",
+        url:"/MgtAddCourseServletAjax",
+        data:$("#addmodalForm").serialize(),
+        datatype:"json",
+        success:function (data) {
+            document.getElementById("usertable").innerHTML = data;
+            document.getElementById("addprogress").style = "width: 100%;";
+            alert("课程添加成功");
+        }
+    });
+}
+
+function deleteCourseAjax(event) {
+    var btn = event.target;
+    // 获得表格中的课程号
+    var td = btn.parentNode;
+    var tr = td.parentNode;
+
+    var strCid = tr.childNodes[0].innerHTML;
+    var strCname = tr.childNodes[1].innerHTML;
+    var myconfirm = confirm("您确认要删除该课程？"+
+        "\n课程号"+strCid +
+        "\n课程名"+strCname);
+    if (myconfirm) {
+        $.ajax({
+            type:"post",
+            url:"/MgtRemoveCourseServletAjax",
+            data:{"cid":strCid},
+            datatype:"json",
+            success:function (data) {
+                document.getElementById("usertable").innerHTML = data;
+                alert("用户"+strCid+"删除成功");
+            }
+        });
+    }
 }
