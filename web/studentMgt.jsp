@@ -49,7 +49,7 @@
         </div>
       </nav>
       <%--<input type="button" class="btn btn-danger" value="添加学生" onclick="openModal()">--%>
-      <input type="button" class="btn btn-danger" value="添加学生" onclick="new function() {
+      <input type="button" class="btn btn-success" value="添加学生" onclick="new function() {
         $('#addModal').modal('show');
       }">
       <table class="table table-striped table-hover" id="usertable">

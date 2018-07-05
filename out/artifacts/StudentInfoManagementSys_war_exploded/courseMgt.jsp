@@ -48,7 +48,7 @@
           </ul>
         </div>
       </nav>
-      <input type="button" class="btn btn-danger" value="添加课程" onclick="new function() {
+      <input type="button" class="btn btn-success" value="添加课程" onclick="new function() {
         $('#addModal').modal('show');
       }">
       <table class="table table-striped table-hover" id="usertable">
@@ -67,7 +67,7 @@
           &times;
         </button>
         <h4 class="modal-title" id="myModalLabel">
-          用户信息修改
+          课程信息修改
         </h4>
       </div>
       <div class="modal-body">

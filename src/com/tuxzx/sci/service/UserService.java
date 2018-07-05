@@ -15,6 +15,6 @@ public interface UserService {
     String getAllSelectedCourse(String uid);
     // 退课
     boolean cancelSelectCourse(String uid, String cid);
-
+    // 获取用户成绩
     String getUserGrade(String uid);
 }

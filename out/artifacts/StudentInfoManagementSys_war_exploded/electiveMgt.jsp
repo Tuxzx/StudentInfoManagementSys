@@ -64,7 +64,7 @@
           &times;
         </button>
         <h4 class="modal-title" id="myModalLabel">
-          用户信息修改
+          学生成绩修改
         </h4>
       </div>
       <div class="modal-body">

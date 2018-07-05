@@ -28,8 +28,7 @@ public class MgtAddUserServletAjax extends HttpServlet {
         String gender = req.getParameter("gender");
         String tel = req.getParameter("tel");
         AdminService adminService = new AdminServiceImpl();
-        LoginService loginService = new LoginServiceImpl();
-        boolean registerStatus = loginService.registeredUser(new User(uid, username, password, gender, age, tel, 0));
+        boolean registerStatus = adminService.addUser(new User(uid, username, password, gender, age, tel, 0));
         if (registerStatus) {
             resp.setCharacterEncoding("utf-8");
             req.setCharacterEncoding("utf-8");
